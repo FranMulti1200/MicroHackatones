@@ -1,0 +1,9 @@
+name: micro-hackaton
+on: push
+jobs:
+  microhackaton-git-action:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Check out repository code
+       uses: action/checkout@v3
+     - run: echo "$(cat tesh1.sh)"
